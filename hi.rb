@@ -1,3 +1,3 @@
 #! /usr/bin/env ruby
 
-puts "hi! hello theer!"
+puts "hi! hello there!"
