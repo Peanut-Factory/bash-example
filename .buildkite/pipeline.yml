@@ -2,7 +2,7 @@ env:
   VALID_QUEUES: 'cat'
 
 agent:
-  queues: ${VALID_QUEUES}
+  queue: ${VALID_QUEUES}
 
 steps:
   - command: 'buildkite-agent pipeline upload /Users/roselu/Documents/peanut-bash-example/.buildkite/agent_metadata.yml'

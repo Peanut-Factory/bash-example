@@ -1,5 +1,5 @@
 agent:
-  queues: $VALID_QUEUES
+  queue: $VALID_QUEUES
 
 steps:
   - command: 'echo $BUILDKITE_AGENT_META_DATA_QUEUE'
