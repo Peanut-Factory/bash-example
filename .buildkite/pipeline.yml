@@ -2,7 +2,7 @@ agent:
   queue: 'default'
 
 steps:
-  - command: 'echo $$FOO'
+  - command: 'echo $FOO'
     label: ':rocket: Deploy production'
     env:
       FOO: 'test'
