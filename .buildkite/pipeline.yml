@@ -5,4 +5,4 @@ steps:
       FOO: "foo"
     label: ':rocket: Deploy production'
     concurrency: 1
-    concurrency_group: '$$FOO'
+    concurrency_group: '$FOO'
