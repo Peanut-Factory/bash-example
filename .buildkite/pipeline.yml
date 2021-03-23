@@ -1,8 +1,8 @@
 env:
   FOO: 'hi'
 
+agent:
+  queues: 'default'
+
 steps:
-  - command: 'echo $$FOO'
-    label: ':rocket: Deploy production'
-    concurrency: 1
-    concurrency_group: '${FOO}'
+  - command: 'buildkite-agent pipeline upload /Users/roselu/Documents/peanut-bash-example/.buildkite/agent_metadata.yml'
