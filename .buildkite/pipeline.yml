@@ -1,6 +1,5 @@
-e
 agent:
-  queues: 'default'
+  queue: 'default'
 
 steps:
   - command: 'echo $$FOO'
