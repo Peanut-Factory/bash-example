@@ -1,10 +1,11 @@
-env:
-  VALID_QUEUES: 'cat'
-
+e
 agent:
-  queue: ${VALID_QUEUES}
+  queues: 'default'
 
 steps:
-  - command: 'buildkite-agent pipeline upload /Users/roselu/Documents/peanut-bash-example/.buildkite/agent_metadata.yml'
+  - command: 'echo $$FOO'
+    label: ':rocket: Deploy production'
     env:
-      VALID_QUEUES: $VALID_QUEUES
+      FOO: 'test'
+    concurrency: 1
+    concurrency_group: '${FOO}'
