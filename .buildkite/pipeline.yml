@@ -2,8 +2,7 @@ agent:
   queue: 'default'
 
 steps:
-  - command: 'echo $FOO'
-    label: ':rocket: Deploy production'
+  - command: 'echo $$FOO'
     env:
       FOO: 'test'
     concurrency: 1
